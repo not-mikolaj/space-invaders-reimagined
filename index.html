@@ -1,51 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Invaders Reimgagined</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space Invaders Reimagined</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Ekran startowy -->
-    <div id="start-screen" class="screen">
-        <h1>Gra JavaScript</h1>
-        <button id="start-button">Start</button>
-        <button id="instruction-button">Instrukcja</button>
-    </div>
-
-    <!-- Ekran gry -->
-        <div id="game-screen">
-        <div id="points-display">0</div>
-        <div id="player"></div>
-        <div id="enemy"></div>
-        <div id="point"></div>
-    </div>
-
-    <!-- Ekran instrukcji -->
-    <div id="instruction-screen" class="screen">
-        <h1>Instrukcja</h1>
-            <p>Sterowanie odbywa się za pomocą strzałek:</p>
-                <ul>
-                    <li>Strzałka w górę: Ruch w górę</li>
-                    <li>Strzałka w dół: Ruch w dół</li>
-                    <li>Strzałka w lewo: Ruch w lewo</li>
-                    <li>Strzałka w prawo: Ruch w prawo</li>
-                </ul>
-    <p>Cel gry: Zebrac wszystkich kosmitow do Ufo</p>
-    <button id="back-to-start">Powrót</button>
-    </div>
-
-    <!-- Ekran końca gry -->
-
-    <div id="game-over-screen" class="screen">
-        <h1>Koniec gry</h1>
-        <p>Twój wynik: <span id="final-score">0</span></p>
-        <button id="restart-button">Powrót do menu</button>
-    </div>
-    
+<!-- Ekran startowy -->
+<div id="start-screen" class="screen">
+<h1>Witaj w grze!</h1>
+<button id="start-button">Rozpocznij grę</button>
+<button id="instruction-button">Instrukcja</button>
+</div>
+<!-- Ekran instrukcji -->
+<div id="instruction-screen" class="screen">
+<h1>Instrukcja gry</h1>
+<p>Poruszaj się za pomocą strzałek na klawiaturze. Zbieraj kosmitow, unikaj meteorów!</p>
+<button id="back-to-start">Powrót</button>
+</div>
+<!-- Ekran gry -->
+<div id="game-screen" class="screen">
+<div id="player" class="player"></div>
+<div id="points-display">Punkty: 0</div>
+<div id="game-over-screen" class="screen">
+<h1>Gra zakończona!</h1>
+<p id="final-score">Wynik: 0</p>
+<button id="restart-button">Restart</button>
+</div>
+</div>
 <script src="script.js"></script>
-
 </body>
 </html>
