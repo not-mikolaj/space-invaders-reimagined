@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders Reimgagined</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ekran startowy -->
+    <div id="start-screen" class="screen">
+        <h1>Gra JavaScript</h1>
+        <button id="start-button">Start</button>
+        <button id="instruction-button">Instrukcja</button>
+    </div>
+
+    <!-- Ekran gry -->
+        <div id="game-screen">
+        <div id="points-display">0</div>
+        <div id="player"></div>
+        <div id="enemy"></div>
+        <div id="point"></div>
+    </div>
+
+    <!-- Ekran instrukcji -->
+    <div id="instruction-screen" class="screen">
+        <h1>Instrukcja</h1>
+            <p>Sterowanie odbywa się za pomocą strzałek:</p>
+                <ul>
+                    <li>Strzałka w górę: Ruch w górę</li>
+                    <li>Strzałka w dół: Ruch w dół</li>
+                    <li>Strzałka w lewo: Ruch w lewo</li>
+                    <li>Strzałka w prawo: Ruch w prawo</li>
+                </ul>
+    <p>Cel gry: Zbierać zielone punkty i unikać kontaktu z niebieskim wrogiem!</p>
+    <button id="back-to-start">Powrót</button>
+    </div>
+
+    <!-- Ekran końca gry -->
+
+    <div id="game-over-screen" class="screen">
+        <h1>Koniec gry</h1>
+        <p>Twój wynik: <span id="final-score">0</span></p>
+        <button id="restart-button">Powrót do menu</button>
+    </div>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
